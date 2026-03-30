@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initTheme();
     initMobileMenu();
     initHeaderScroll();
-    initContactForm();
     initRevealAnimations();
     initAnchorScroll();
 });
@@ -108,31 +107,7 @@ function initHeaderScroll() {
     window.addEventListener("scroll", updateHeaderState, { passive: true });
 }
 
-function initContactForm() {
-    const contactForm = document.getElementById("contactForm");
-
-    if (!contactForm) {
-        return;
-    }
-
-    contactForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const subject = document.getElementById("subject").value.trim();
-        const message = document.getElementById("message").value.trim();
-
-        const mailtoSubject = encodeURIComponent(`[NotesAI-RNA Contact] ${subject}`);
-        const mailtoBody = encodeURIComponent(
-            `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-        );
-
-        window.location.href = `mailto:nzemberichard398@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
-        window.alert("Your email app will open with the message ready to send.");
-        contactForm.reset();
-    });
-}
+// Contact form handler removed — contact form was replaced with direct mailto/call links in contact.html
 
 function initRevealAnimations() {
     const elements = document.querySelectorAll(".reveal");
