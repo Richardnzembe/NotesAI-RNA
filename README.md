@@ -4,8 +4,8 @@ A modern, responsive website for NotesAI-RNA - Smart Notes. Tasks. AI. All in On
 
 ## 🌐 Live Website
 
-This website is hosted on GitHub Pages. Once deployed, it will be available at:
-`https://yourusername.github.io/your-repo-name/`
+This website can be hosted on GitHub Pages or any static host. If you push this repository to GitHub under your account it will be available at:
+`https://github.com/Richardnzembe/NotesAI-RNA` (replace with your username if using a fork).
 
 ## 📁 Project Structure
 
@@ -34,12 +34,20 @@ NotesAI-RNA/
 
 ### Method 1: Using GitHub Web Interface
 
-1. **Create a GitHub Repository**
-   - Go to [GitHub](https://github.com)
-   - Click "New Repository"
-   - Name it `notesai-rna-website` (or your preferred name)
-   - Choose "Public"
-   - Click "Create Repository"
+1. **Push this project to GitHub**
+   - Create or use an existing repository on GitHub (for example `NotesAI-RNA`).
+   - From this project folder, run the following commands in PowerShell:
+
+```powershell
+git init ;
+git add -A ;
+git commit -m "chore: modernize site, add metadata and favicon" ;
+git branch -M main ;
+git remote add origin https://github.com/<your-username>/NotesAI-RNA.git ;
+git push -u origin main
+```
+
+   - Replace `<your-username>` with your GitHub username. If you already have a remote set up, skip the `remote add` step and push directly.
 
 2. **Upload Files**
    - On your repository page, click "uploading an existing file"
