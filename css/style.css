@@ -19,8 +19,9 @@
     --accent: #4f46e5;
     --accent-soft: #7c3aed;
     --warm: #f59e0b;
-    --gradient: linear-gradient(135deg, #0f9e9f 0%, #2563eb 48%, #7c3aed 100%);
-    --gradient-soft: linear-gradient(135deg, rgba(15, 158, 159, 0.12) 0%, rgba(37, 99, 235, 0.1) 48%, rgba(124, 58, 237, 0.14) 100%);
+    /* updated gradient palette for a cleaner AI look */
+    --gradient: linear-gradient(135deg, #06b6d4 0%, #6366f1 52%, #8b5cf6 100%);
+    --gradient-soft: linear-gradient(135deg, rgba(6, 182, 212, 0.10) 0%, rgba(99,102,241,0.06) 52%, rgba(139,92,246,0.08) 100%);
     --shadow-soft: 0 14px 35px rgba(15, 23, 42, 0.08);
     --shadow-card: 0 25px 60px rgba(15, 23, 42, 0.12);
     --font-heading: "Sora", sans-serif;
@@ -930,6 +931,44 @@ body.menu-open {
 
 .contact-grid {
     align-items: start;
+}
+
+/* Make contact columns match heights and center the right-side content
+   to avoid awkward empty space where the form used to be. */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch; /* ensure both columns are equal height */
+}
+
+.contact-stack {
+    display: grid;
+    gap: 20px;
+}
+
+.contact-method {
+    padding: 24px;
+    min-height: 120px;
+}
+
+.contact-form {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center short content */
+    border-radius: 20px;
+}
+
+@media (max-width: 860px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        align-items: start;
+    }
+
+    .contact-form {
+        justify-content: flex-start;
+    }
 }
 
 .contact-stack {
