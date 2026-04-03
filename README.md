@@ -1,157 +1,58 @@
 # NotesAI-RNA Website
 
-A modern, responsive website for NotesAI-RNA - Smart Notes. Tasks. AI. All in One.
+Official landing site for NotesAI-RNA: product overview, Android APK download, web workspace link for PC/tablets, privacy policy, terms, and contact/support.
 
-## 🌐 Live Website
+## Positioning (Marketing Copy)
 
-This website can be hosted on GitHub Pages or any static host. If you push this repository to GitHub under your account it will be available at:
-`https://github.com/Richardnzembe/NotesAI-RNA` (replace with your username if using a fork).
+NotesAI-RNA helps students, researchers, and builders capture notes, plan tasks, and use AI to move faster without juggling multiple apps. Start on Android with a lightweight APK, then continue in the web workspace on bigger screens.
 
-## 📁 Project Structure
+## Quick Links (In This Repo)
+
+- APK: `NotesAI-RNA.apk`
+- Home: `index.html`
+- Features: `features.html`
+- Download hub: `download.html`
+- Privacy: `privacy.html`
+- Terms: `terms.html`
+- Contact/support: `contact.html`
+
+## Project Structure
 
 ```
 NotesAI-RNA/
-├── index.html          # Landing Page (Home)
-├── features.html       # Features Page
-├── download.html       # Download Page
-├── privacy.html       # Privacy Policy
-├── terms.html          # Terms of Service
-├── contact.html        # Contact/Support Page
-├── css/
-│   └── style.css      # Main Stylesheet
-├── js/
-│   └── main.js        # JavaScript Interactions
-├── logo/
-│   └── icon-512.png   # App Logo
-├── screenshots/
-│   ├── 1.png         # App Screenshot 1
-│   ├── 2.png         # App Screenshot 2
-│   └── 3.png         # App Screenshot 3
-└── README.md          # This file
+  index.html
+  features.html
+  download.html
+  privacy.html
+  terms.html
+  contact.html
+  css/style.css
+  js/main.js
+  logo/icon-512.png
+  favicon.svg
+  screenshots/
 ```
 
-## 🚀 Deployment to GitHub Pages
+## Deploy (GitHub Pages)
 
-### Method 1: Using GitHub Web Interface
+1. Push this repo to GitHub.
+2. In GitHub: Settings -> Pages -> Build and deployment.
+3. Set Source to "Deploy from a branch".
+4. Pick `main` branch and `/ (root)` folder.
 
-1. **Push this project to GitHub**
-   - Create or use an existing repository on GitHub (for example `NotesAI-RNA`).
-   - From this project folder, run the following commands in PowerShell:
+After a minute or two, your site will be live at a URL like:
 
-```powershell
-git init ;
-git add -A ;
-git commit -m "chore: modernize site, add metadata and favicon" ;
-git branch -M main ;
-git remote add origin https://github.com/<your-username>/NotesAI-RNA.git ;
-git push -u origin main
+```text
+https://<your-username>.github.io/<repo-name>/
 ```
 
-   - Replace `<your-username>` with your GitHub username. If you already have a remote set up, skip the `remote add` step and push directly.
+## Tech
 
-2. **Upload Files**
-   - On your repository page, click "uploading an existing file"
-   - Drag and drop all the files from this project
-   - Click "Commit changes"
+- HTML + CSS + Vanilla JavaScript
+- Google Fonts: Manrope and Sora
 
-3. **Enable GitHub Pages**
-   - Go to "Settings" tab
-   - Click "Pages" in the left sidebar
-   - Under "Source", select "main" branch
-   - Click "Save"
-   - Wait 1-2 minutes for deployment
+## Support
 
-4. **Get Your URL**
-   - Go back to "Pages" section
-   - You'll see your live URL: `https://yourusername.github.io/notesai-rna-website/`
+- Email: `nzemberichard398@gmail.com`
+- Phone: `0779019896`
 
-### Method 2: Using Git CLI
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/notesai-rna-website.git
-cd notesai-rna-website
-
-# Create a new branch for deployment
-git checkout -b gh-pages
-
-# Push to GitHub
-git push origin gh-pages
-
-# Go to Settings > Pages and select "gh-pages" branch as source
-```
-
-### Method 3: Using GitHub Desktop
-
-1. Download [GitHub Desktop](https://desktop.github.com)
-2. Add this folder to GitHub Desktop
-3. Commit the changes
-4. Push to origin
-5. Go to Repository Settings → GitHub Pages → Enable
-
-## 🎨 Customization
-
-### Changing the Primary Color
-Edit `css/style.css` and find the `--primary` variable:
-```css
-:root {
-    --primary: #2563EB;  /* Change this hex code */
-    --primary-hover: #1D4ED8;
-}
-```
-
-### Updating Contact Information
-Edit each HTML file and update the contact details:
-- `contact.html` - Main contact page
-- Footer on all pages - Links to contact
-- `privacy.html` & `terms.html` - Legal pages
-
-### Adding Your APK File
-1. Upload your APK file to the repository
-2. Edit `download.html`
-3. Find the APK download button and update the href:
-```html
-<a href="your-apk-file.apk" class="btn btn-primary">
-    📥 Download APK
-</a>
-```
-
-### Adding Google Play Store Link
-Edit `download.html` and update the Play Store link:
-```html
-<a href="https://play.google.com/store/your-app-link" class="btn btn-secondary">
-    🏪 View on Play Store
-</a>
-```
-
-## 📱 Features
-
-- ✅ Responsive design (works on mobile, tablet, desktop)
-- ✅ Dark mode toggle
-- ✅ Professional blue color theme (#2563EB)
-- ✅ Smooth animations
-- ✅ SEO optimized
-- ✅ Accessible navigation
-- ✅ All 6 pages: Home, Features, Download, Privacy, Terms, Contact
-
-## 🛠️ Technologies Used
-
-- **HTML5** - Semantic markup
-- **CSS3** - Modern CSS with variables
-- **JavaScript** - Vanilla JS (no frameworks)
-- **Google Fonts** - Poppins & Inter fonts
-
-## 📄 License
-
-Copyright © 2024 NotesAI-RNA. All rights reserved.
-
-## 🤝 Support
-
-For questions or support:
-- Email: nzemberichard398@gmail.com
-- Phone: 0779019896
-- Website: Contact page once deployed
-
----
-
-**Note:** Don't forget to update the "Last Updated" dates in `privacy.html` and `terms.html` when you make changes!
